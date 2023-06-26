@@ -1,0 +1,53 @@
+.navbar-section {
+  h2 {
+    font-size: 40px;
+    font-weight: 600;
+  }
+  a {
+    text-decoration: none;
+    color: #d7d7d7;
+    font-size: 18px;
+
+    &:hover {
+      color: #fff;
+    }
+    &:active {
+      color: #d7d7d7;
+    }
+  }
+  &_links {
+    margin-left: 20px;
+    cursor: pointer;
+
+    .icons {
+      width: 20px;
+      height: 20px;
+      margin-right: 20px;
+      background-color: transparent;
+      padding: 15px;
+      border-radius: 50%;
+      transition: ease-out 0.5s;
+
+      &:hover {
+        box-shadow: inset 200px 0 0 0 white;
+        color: black;
+      }
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+  button {
+    color: #fff;
+    border: 1px solid white;
+    padding: 18px 36px;
+    background-color: transparent;
+    font-weight: 600;
+    transition: ease-out 0.5s;
+
+    &:hover {
+      box-shadow: inset 200px 0 0 0 white;
+      color: black;
+    }
+  }
+}
