@@ -1,0 +1,42 @@
+.footer-section {
+  padding: 150px 0px;
+  background-image: url("../../assets/img/footer-bg.png");
+
+  .container {
+    position: relative;
+  }
+
+  h2 {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  &_links {
+    cursor: pointer;
+
+    .icons {
+      width: 20px;
+      height: 20px;
+      margin-right: -10px;
+      background-color: transparent;
+      padding: 15px;
+      border-radius: 50%;
+      transition: ease-out 0.5s;
+
+      &:hover {
+        box-shadow: inset 200px 0 0 0 white;
+        color: black;
+      }
+    }
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+  p {
+    position: absolute;
+    right: 0;
+    color: #b0adad;
+    font-size: 14px;
+  }
+}

@@ -1,4 +1,4 @@
-// import Banner from "./pages/banner/banner";
+import Banner from "./pages/banner/banner";
 import Footer from "./layouts/footer/footer";
 import Navbar from "./layouts/navbar/navbar";
 
@@ -8,9 +8,9 @@ import "./app.styles.scss";
 
 function App() {
   return (
-    <div className="container">
+    <div>
       <Navbar />
-      {/* <Banner /> */}
+      <Banner />
 
       <Footer />
     </div>
