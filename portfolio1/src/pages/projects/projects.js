@@ -1,11 +1,11 @@
 import React from "react";
 
-import Brandspire from "../../assets/img/Brandspire.png";
 import Pizza from "../../assets/img/Pizza.png";
 import Piano from "../../assets/img/Piano.png";
-import WhackAMole from "../../assets/img/whackamole.png";
-import Website1 from "../../assets/img/Website1.png";
 import Clock from "../../assets/img/Clock.png";
+import Website1 from "../../assets/img/Website1.png";
+import Brandspire from "../../assets/img/Brandspire.png";
+import WhackAMole from "../../assets/img/whackamole.png";
 
 import "./projects.styles.scss";
 

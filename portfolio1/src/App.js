@@ -11,8 +11,10 @@ import "./app.styles.scss";
 function App() {
   return (
     <div>
-      <Navbar />
-      <Banner />
+      <div className="background">
+        <Navbar />
+        <Banner />
+      </div>
       <Skills />
       <Projects />
       <Contacts />
