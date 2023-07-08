@@ -3,11 +3,124 @@
   padding: 80px 0px;
   text-align: center;
 
-  &_tabs {
-    display: grid;
-    grid-template-columns: repeat(3, 4fr);
-    span {
-      color: red;
+  h2 {
+    font-size: 48px;
+    font-weight: 600;
+  }
+
+  &_box {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    background-color: #1a1a1a;
+    border-radius: 50px;
+    cursor: pointer;
+    color: white;
+    border: 1px solid rgb(225, 220, 220);
+    font-size: 24px;
+    padding: 15px;
+
+    .column {
+      flex: 1;
+      position: relative;
     }
+
+    .column:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      top: -15px;
+      right: 0;
+      height: 180%;
+      width: 2px;
+      background-color: rgb(225, 220, 220);
+    }
+  }
+
+  &_images {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    .images_wrapper {
+      border-radius: 10px;
+      cursor: pointer;
+      position: relative;
+      margin-right: 10px;
+
+      span {
+        position: absolute;
+        top: 50px;
+        left: 80px;
+        color: black;
+        font-size: 42px;
+        display: none;
+        color: white;
+      }
+
+      p {
+        position: absolute;
+        top: 110px;
+        left: 80px;
+        color: black;
+        font-size: 12px;
+        display: none;
+        color: white;
+        font-style: italic;
+      }
+
+      &::before {
+        content: "";
+        background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+        opacity: 0.85;
+        position: absolute;
+        width: 100%;
+        left: 10px;
+        top: 10px;
+        height: 0;
+        transition: height 0.3s ease;
+      }
+
+      &:hover::before {
+        height: 90%;
+      }
+
+      &:hover {
+        span {
+          display: block;
+          text-decoration: underline;
+        }
+
+        p {
+          display: block;
+        }
+      }
+      &:nth-child(2):hover::before {
+        height: 89%;
+      }
+
+      &:last-child {
+        cursor: default;
+
+        span {
+          text-decoration: none;
+        }
+      }
+    }
+
+    img {
+      margin: 10px;
+      width: 100%;
+      border-radius: 10px;
+      object-fit: contain;
+    }
+  }
+
+  @media screen and (max-width: 995px) {
+    .projects-section_images {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  a {
+    text-decoration: none;
   }
 }

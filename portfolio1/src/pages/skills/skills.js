@@ -6,7 +6,7 @@ import HTML from "../../assets/img/HTML.png";
 import SASS from "../../assets/img/sass.png";
 import NODE from "../../assets/img/node.png";
 import REACT from "../../assets/img/React.png";
-import GITHUB from "../../assets/img/github.png";
+import GITHUB from "../../assets/img/github.avif";
 
 import "./skills.styles.scss";
 
@@ -18,7 +18,6 @@ const Skills = () => {
           <div className="row">
             <div className="col-lg-1 left">
               <h3 className="skills">Skills</h3>
-              {/* <hr className="line" /> */}
             </div>
             <div className="col-lg-11 right">
               <h4>What I Do</h4>
@@ -54,12 +53,12 @@ const Skills = () => {
                 </div>
 
                 <div className="carousel_images">
-                  <img src={GITHUB} alt="github"></img>
+                  <img src={GITHUB} className="github" alt="github "></img>
                   <div>GITHUB</div>
                 </div>
 
                 <div className="carousel_images">
-                  <img src={NODE} alt="github"></img>
+                  <img src={NODE} alt="github" className="node"></img>
                   <div>NODE JS</div>
                 </div>
               </div>
