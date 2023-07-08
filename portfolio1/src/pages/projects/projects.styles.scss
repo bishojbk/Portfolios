@@ -1,0 +1,13 @@
+.projects-section {
+  background-color: black !important;
+  padding: 80px 0px;
+  text-align: center;
+
+  &_tabs {
+    display: grid;
+    grid-template-columns: repeat(3, 4fr);
+    span {
+      color: red;
+    }
+  }
+}

@@ -1,0 +1,98 @@
+.contacts-section {
+  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+  padding: 120px 0;
+
+  h3 {
+    font-size: 45px;
+    font-weight: 600;
+  }
+
+  img {
+    width: 100%;
+  }
+  .contact-form {
+    padding: 0px 40px;
+    margin-top: -20px;
+
+    form {
+      margin-top: 50px;
+
+      input {
+        padding: 15px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        outline: none;
+        border: 1px solid rgb(243, 240, 240);
+        border-radius: 10px;
+        background: transparent;
+        transition: 0.5s ease;
+      }
+
+      input:focus {
+        background-color: white;
+      }
+
+      input:focus::placeholder {
+        color: black;
+      }
+
+      input::placeholder {
+        color: white;
+        opacity: 0.8;
+      }
+      textarea {
+        padding: 15px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        outline: none;
+        border: 1px solid rgb(243, 240, 240);
+        border-radius: 10px;
+        background: transparent;
+      }
+
+      textarea:focus {
+        background-color: white;
+      }
+
+      textarea:focus::placeholder {
+        color: black;
+      }
+      textarea::placeholder {
+        color: white;
+        opacity: 0.8;
+      }
+      button {
+        padding: 15px;
+        width: 130px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        outline: none;
+        border: none;
+        font-weight: 600;
+        transition: ease-out 0.5s;
+
+        &:hover {
+          box-shadow: inset 200px 0 0 0 black;
+          color: white;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 993px) {
+    .contact-form {
+      margin-top: 50px;
+      h3 {
+        font-size: 25px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  @media screen and (max-width: 505px) {
+    .contact-form {
+      textarea {
+        width: 100%;
+      }
+    }
+  }
+}
