@@ -39,4 +39,10 @@
     color: #b0adad;
     font-size: 14px;
   }
+
+  @media screen and (max-width: 505px) {
+    p {
+      font-size: 8px;
+    }
+  }
 }

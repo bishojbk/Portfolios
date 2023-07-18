@@ -76,7 +76,7 @@ const Projects = () => {
         </div>
 
         <p className="mt-4">
-          If you want to see more of my projects, click on my{" "}
+          If you want to see more of my projects, click on my
           <a
             href="https://github.com/bishojbk"
             target="_blank"
