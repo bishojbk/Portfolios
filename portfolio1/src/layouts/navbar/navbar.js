@@ -1,28 +1,34 @@
 import React from "react";
 
+import { Link } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-// import { ReactComponent as HeaderImg } from "../../assets/img/header-img.svg";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faSquareFacebook } from "@fortawesome/free-brands-svg-icons";
 
 import "./navbar.styles.scss";
 
-const Home = () => {};
-
 const Navbar = () => {
   return (
     <div className="navbar-section">
       <div className="container">
         <div className="row align-items-center">
-          <h2 className="col col-sm-3" onClick={Home}>
-            EJR
-          </h2>
+          <h2 className="col col-sm-3">BISOJ</h2>
           <div className="col d-flex justify-content-between align-items-center">
-            <a href="#home">Home</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
+            <nav className="d-flex justify-content-between">
+              <li>
+                <Link to="home">Home</Link>
+              </li>
+              <li>
+                <Link to="skills" duration={1000}>
+                  Skills
+                </Link>
+              </li>
+              <li>
+                <Link to="projects">Projects</Link>
+              </li>
+            </nav>
 
             <div className="navbar-section_links">
               <a
@@ -48,7 +54,9 @@ const Navbar = () => {
               </a>
             </div>
 
-            <button>Let &apos;s Connect</button>
+            <Link to="contact">
+              <button>Let &apos;s Connect</button>
+            </Link>
           </div>
         </div>
       </div>

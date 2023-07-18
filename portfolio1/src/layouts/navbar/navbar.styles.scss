@@ -6,6 +6,12 @@
     font-weight: 600;
     letter-spacing: 1px;
   }
+
+  li {
+    list-style: none;
+    margin-left: 55px;
+    cursor: pointer;
+  }
   a {
     text-decoration: none;
     color: #d7d7d7;

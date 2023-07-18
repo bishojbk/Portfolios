@@ -13,7 +13,7 @@ const Footer = () => {
     <div className="footer-section">
       <div className="container">
         <div className="d-flex align-items-center justify-content-between">
-          <h2>EJR</h2>
+          <h2>BISOJ</h2>
           <div>
             <div className="footer-section_links">
               <a
