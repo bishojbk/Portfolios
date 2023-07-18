@@ -16,10 +16,10 @@ const Navbar = () => {
     <div className="navbar-section">
       <div className="container">
         <div className="row align-items-center">
-          <h2 className="col-lg-4" onClick={Home}>
+          <h2 className="col col-sm-3" onClick={Home}>
             EJR
           </h2>
-          <div className="col-lg-8 d-flex justify-content-between align-items-center">
+          <div className="col d-flex justify-content-between align-items-center">
             <a href="#home">Home</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>

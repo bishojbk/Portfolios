@@ -53,4 +53,22 @@
       color: black;
     }
   }
+
+  @media screen and (max-width: 995px) {
+    // a {
+    //   display: none;
+    // }
+    .icons {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    a {
+      display: none;
+    }
+    .icons {
+      display: none;
+    }
+  }
 }
