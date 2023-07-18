@@ -19,7 +19,7 @@ const Skills = () => {
             <div className="col-lg-1 left">
               <h3 className="skills">Skills</h3>
             </div>
-            <div className="col-lg-11 right">
+            <div className="col right">
               <h4>What I Do</h4>
               <p>
                 I am an Electronics, Communication and Information Engineer

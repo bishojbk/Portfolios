@@ -123,4 +123,38 @@
   a {
     text-decoration: none;
   }
+
+  @media screen and (max-width: 769px) {
+    .column {
+      flex: 1;
+      position: relative;
+    }
+
+    .column:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      top: -15px;
+      right: 0;
+      height: 140%;
+      width: 2px;
+      background-color: rgb(225, 220, 220);
+    }
+  }
+
+  @media screen and (max-width: 389px) {
+    .column {
+      flex: 1;
+      position: relative;
+    }
+
+    .column:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      top: -15px;
+      right: 0;
+      height: 128%;
+      width: 2px;
+      background-color: rgb(225, 220, 220);
+    }
+  }
 }
