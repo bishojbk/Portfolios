@@ -91,15 +91,14 @@
       @media screen and (max-width: 768px) {
         .carousel {
           grid-template-columns: repeat(2, 1fr);
+          margin-left: -30px;
 
           &_images {
-            background-color: #161616;
             padding: 15px;
-            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px;
           }
 
           img {
-            width: 60%;
+            width: 80%;
             height: 60%;
           }
         }
